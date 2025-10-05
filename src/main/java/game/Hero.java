@@ -14,7 +14,7 @@ public class Hero extends Character {
 
     @Override
     public void attack(Character target) {
-        System.out.println(name + "Punches" + target.getName() + " with " + getName() + " for " + weapon.getDamage() + " damage!");
+        System.out.println(name + " Punches " + target.getName() + " with " + weapon.getName() + " for " + weapon.getDamage() + " damage!");
         target.takeDamage(weapon.getDamage());
 
     }
