@@ -1,7 +1,7 @@
 package game;
 
-public class ClubberLang extends Monster {
-    public ClubberLang() {
+public class MonsterLang extends Monster {
+    public MonsterLang() {
         super("Clubber Lang", 60, 10);
         this.damage = 10;
     }

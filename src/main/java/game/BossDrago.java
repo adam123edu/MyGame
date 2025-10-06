@@ -1,10 +1,10 @@
 package game;
 
-public class IvanDrago extends Monster {
+public class BossDrago extends Monster {
 
-    public IvanDrago() {
-        super("Ivan Drago", 100, 15);
-        this.damage = 15;
+    public BossDrago() {
+        super("Ivan Drago", 100, 12);
+        this.damage = 12;
     }
 
     @Override
