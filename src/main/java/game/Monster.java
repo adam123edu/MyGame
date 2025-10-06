@@ -8,11 +8,13 @@ public abstract class Monster extends Character {
         this.damage = damage;
     }
 
-    // Abstract methods inherited from Character
     @Override
     public abstract void attack(Character target);
 
     @Override
     public abstract void takeDamage(int damage);
 }
+
+// This is the monster class
+// It is abstract and is used by all monsters
 

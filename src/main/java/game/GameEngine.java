@@ -55,21 +55,18 @@ public class GameEngine {
         MonsterLang monster = new MonsterLang();
         System.out.println("\nA fierce competitor " + monster.getName() + " appears!");
 
-        // Turbaserad strid
         while (hero.getHp() > 0 && monster.getHp() > 0) {
             hero.attack(monster);
             if (monster.getHp() <= 0) break;
 
             monster.attack(hero);
 
-            // Extra chans att Rocky återhämtar sig om HP blir låg (för att vinna oftare)
             if (hero.getHp() <= 20 && Math.random() < 0.8) {
                 hero.restoreHp();
                 System.out.println(hero.getName() + " fights back with a burst of energy!");
             }
         }
 
-        // Striden är över
         if (hero.getHp() > 0) {
             System.out.println(monster.getName() + " is defeated!");
             hero.gainXp(100);
@@ -87,21 +84,18 @@ public class GameEngine {
         BossDrago boss = new BossDrago();
         System.out.println("\nFINAL BOSS " + boss.getName() + " appears!");
 
-        // Turbaserad strid mot final boss
         while (hero.getHp() > 0 && boss.getHp() > 0) {
             hero.attack(boss);
             if (boss.getHp() <= 0) break;
 
             boss.attack(hero);
 
-            // Ge Rocky 60% chans att återhämta sig när HP blir låg
             if (hero.getHp() <= 30 && Math.random() < 0.4) {
                 hero.restoreHp();
                 System.out.println(hero.getName() + " Rocky`s has managed to restore his energy!");
             }
         }
 
-        // Resultat av final boss-striden
         if (hero.getHp() > 0) {
             System.out.println("\n" + hero.getName() + " defeated " + boss.getName() + "!");
             System.out.println("Congratulations! You win the game!");
@@ -113,3 +107,7 @@ public class GameEngine {
         }
     }
 }
+
+// Class gameengine involves gameflow, menus and the fights
+// The class got quite long and does different things.
+// Next time it would be better if I split the fights and the menusystem in different classes for better structure

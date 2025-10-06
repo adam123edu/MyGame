@@ -25,3 +25,7 @@ public class BossDrago extends Monster {
         System.out.println(getName() + " takes " + damage + " damage. HP left: " + hp);
     }
 }
+
+// This class represents the final boss Ivan Drago
+// He also extends from monster class
+// He can do a special attack and sometimes gives out double damage

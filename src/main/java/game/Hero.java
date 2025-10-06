@@ -57,7 +57,11 @@ public class Hero extends Character {
 
     public void extraAttack(Character target, int extraDamage) {
         System.out.println(name + " uses extra fighting spirit punch on " + target.getName() + " for " + extraDamage + " damage!");
-        target.takeDamage(extraDamage); // applicerar skadan
+        target.takeDamage(extraDamage);
     }
 
 }
+
+// Class hero represents rockys character
+// Hero has a weapon, level, xp and hp
+// Class handles the fight, the level up system and extra attack

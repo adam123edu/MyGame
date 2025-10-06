@@ -19,3 +19,6 @@ public class MonsterLang extends Monster {
         System.out.println(getName() + " takes " + damage + " damage. HP left: " + hp);
     }
 }
+
+//This class is the normal monster in the game.
+// It extends from Monster class and shows how Clubber Lang attack and take damage

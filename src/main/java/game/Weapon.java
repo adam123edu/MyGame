@@ -23,4 +23,6 @@ public class Weapon {
     }
 }
 
+// Class (Weapon) represents a weapon hero can use. Also contains the weapons name and damage
+
 
